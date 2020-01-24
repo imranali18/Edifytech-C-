@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lecture 13 — While Loops &mdash; CS1010 Fall 2019  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Code Developed in CSCI-1010 Fall 2019" href="../class_code.html" />
+    <link rel="prev" title="Lecture 12 — Solving Problems on Lists" href="lec12_listproblems.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CS1010 Fall 2019
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../calendar.html">Detailed schedule of topics for this class</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../lecture_notes.html">Lecture notes and exercises</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="lec01_intro.html">Lecture 1 — Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec02_installation.html">Lecture 2 — Python Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec03_LogicAndStatements.html">Lecture 3 — Python Logic and Statements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec04_practiceset1.html">Lecture 4 — Using Operators,Input and Logic in Solving Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec05_strings.html">Lecture 5 — Python Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec06_practiceset2.html">Lecture 6 — Using Strings and String Manipulation to Solve Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec07_functions.html">Lecture 7 — Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec08_exam1reveiw.html">Lecture 8 — Exam Review</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec09_modules_images.html">Lecture 9 — Tuples, Modules, and Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec10_images_problems.html">Lecture 10 — Problems on Tuples,Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec11_lists1.html">Lecture 11 — Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec12_listproblems.html">Lecture 12 — Solving Problems on Lists</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Lecture 13 — While Loops</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#part-1-the-basics">Part 1: The Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#basics-of-while">Basics of While</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-loops-with-lists">Using Loops with Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lecture-slides">Lecture Slides</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lecture-video">Lecture Video</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../class_code.html">Code written in class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python_environment.html">Software installation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CS1010 Fall 2019</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../lecture_notes.html">Lecture Notes</a> &raquo;</li>
+        
+      <li>Lecture 13 — While Loops</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/lecture_notes/lec13_loops1_while.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lecture-13-while-loops">
+<h1>Lecture 13 — While Loops<a class="headerlink" href="#lecture-13-while-loops" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Loops are used to access and modify information stored in lists and
+are used to repeat computations many times.</p></li>
+<li><p>We construct loops using logical conditions: <code class="docutils literal notranslate"><span class="pre">while</span></code> loops.</p></li>
+<li><p>We will investigate single and multiple loops.</p></li>
+</ul>
+<p>Reading:  Our coverage of loops is in a different order than that of
+<em>Practical Programming</em>.  A direct reference for reading material is
+Section 9.6.</p>
+</div>
+<div class="section" id="part-1-the-basics">
+<h2>Part 1: The Basics<a class="headerlink" href="#part-1-the-basics" title="Permalink to this headline">¶</a></h2>
+<p>-Iteration means executing the same block of code over and over many times.</p>
+<ul>
+<li><p>A programming structure that implements iteration is called a loop.</p></li>
+<li><p>In programming, there are two types of iteration, indefinite and definite:</p>
+<blockquote>
+<div><p>With indefinite iteration, the number of times the loop is executed isn’t specified explicitly in advance. Rather, the designated block is executed repeatedly as long as some condition is met. For example While Loops.</p>
+<p>With definite iteration, the number of times the designated block will be executed is specified explicitly at the time the loop starts. For example for loop.</p>
+</div></blockquote>
+</li>
+<li><p>We will see two ways to write loops: using <code class="docutils literal notranslate"><span class="pre">while</span></code> loops and <code class="docutils literal notranslate"><span class="pre">for</span></code> loops.</p></li>
+<li><p>In Python, <code class="docutils literal notranslate"><span class="pre">while</span></code> loops are more general because you
+can always write a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop using a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop.</p></li>
+<li><p>We will start with <code class="docutils literal notranslate"><span class="pre">while</span></code> loops first and then see how we can
+simplify common tasks with <code class="docutils literal notranslate"><span class="pre">for</span></code> loops later.</p></li>
+</ul>
+</div>
+<div class="section" id="basics-of-while">
+<h2>Basics of While<a class="headerlink" href="#basics-of-while" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Our first <code class="docutils literal notranslate"><span class="pre">while</span></code> loop just counts numbers from 1 to 9, and prints them:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>   <span class="c1">## if you forget this, your program will never end</span>
+</pre></div>
+</div>
+</li>
+<li><p>General form of a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">block</span> <span class="n">a</span>
+<span class="k">while</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="n">block</span> <span class="n">b</span>
+<span class="n">block</span> <span class="n">c</span>
+</pre></div>
+</div>
+</li>
+<li><p>Steps:</p>
+<ol class="arabic simple">
+<li><p>General Procedure:</p></li>
+</ol>
+</li>
+</ul>
+<ol class="arabic simple">
+<li><p>Initialize a counter variable</p></li>
+<li><p>Specify the condition for while</p></li>
+<li><p>Specify the required actions</p></li>
+<li><p>Increment or Decrement the counter</p></li>
+</ol>
+</div>
+<div class="section" id="using-loops-with-lists">
+<h2>Using Loops with Lists<a class="headerlink" href="#using-loops-with-lists" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Often, we use loops to repeat a specific operation on every element of
+a list.</p></li>
+<li><p>We must be careful to create a number that will serve as the index
+of elements of a list. Valid values are: 0 up to (not including)
+the length of list:</p></li>
+</ul>
+</div>
+<div class="section" id="lecture-slides">
+<h2>Lecture Slides<a class="headerlink" href="#lecture-slides" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://drive.google.com/file/d/1Eol1pULgv2FBDY2A5dyEcaADgRX91zzE/view?usp=sharing">https://drive.google.com/file/d/1Eol1pULgv2FBDY2A5dyEcaADgRX91zzE/view?usp=sharing</a></p>
+</div>
+<div class="section" id="lecture-video">
+<h2>Lecture Video<a class="headerlink" href="#lecture-video" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=pBjdSIyUJR8&amp;t=396s">https://www.youtube.com/watch?v=pBjdSIyUJR8&amp;t=396s</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../class_code.html" class="btn btn-neutral float-right" title="Code Developed in CSCI-1010 Fall 2019" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="lec12_listproblems.html" class="btn btn-neutral float-left" title="Lecture 12 — Solving Problems on Lists" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Uzma Mushtaque
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

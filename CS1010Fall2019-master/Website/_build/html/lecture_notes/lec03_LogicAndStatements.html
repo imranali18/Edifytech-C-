@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lecture 3 — Python Logic and Statements &mdash; CS1010 Fall 2019  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Code Developed in CSCI-1100 Summer 2019" href="../class_code.html" />
+    <link rel="prev" title="Lecture 2 — Python Installation" href="lec02_installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CS1010 Fall 2019
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../calendar.html">Detailed schedule of topics for this class</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../lecture_notes.html">Lecture notes and exercises</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="lec01_intro.html">Lecture 1 — Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lec02_installation.html">Lecture 2 — Python Installation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Lecture 3 — Python Logic and Statements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#reading">Reading</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#making-choices">Making Choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#topics-for-today">Topics for Today</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lecture-notes-slides">Lecture notes/Slides</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#supplemental-videos">Supplemental Videos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../class_code.html">Code written in class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python_environment.html">Software installation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CS1010 Fall 2019</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../lecture_notes.html">Lecture Notes</a> &raquo;</li>
+        
+      <li>Lecture 3 — Python Logic and Statements</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/lecture_notes/lec03_LogicAndStatements.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lecture-3-python-logic-and-statements">
+<h1>Lecture 3 — Python Logic and Statements<a class="headerlink" href="#lecture-3-python-logic-and-statements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="reading">
+<h2>Reading<a class="headerlink" href="#reading" title="Permalink to this headline">¶</a></h2>
+<p>This material is drawn from Chapter 5 of <em>Practical Programming</em>, 3rd
+edition.</p>
+</div>
+<div class="section" id="making-choices">
+<h2>Making Choices<a class="headerlink" href="#making-choices" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>One of the fundamental reason of using programming is to solve problems.</p></li>
+<li><p>A major portion of problem solving involves decision making therefore very early</p></li>
+</ul>
+<p>on in the course we will learn about Boolean Types in Python.</p>
+<ul class="simple">
+<li><p>We will build Boolean expressions and understand their outcomes and get acquainted with</p></li>
+</ul>
+<p>operators in Python.</p>
+<ul class="simple">
+<li><p>If-Else statements (Also called control flow statements) play an important role in</p></li>
+</ul>
+<p>structuring the flow of decision making steps in programs. We will discuss those as well.</p>
+</div>
+<div class="section" id="topics-for-today">
+<h2>Topics for Today<a class="headerlink" href="#topics-for-today" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Comparison Operators</p></li>
+<li><p>Boolean Types</p></li>
+<li><p>If-Else Statements</p></li>
+</ul>
+</div>
+<div class="section" id="lecture-notes-slides">
+<h2>Lecture notes/Slides<a class="headerlink" href="#lecture-notes-slides" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://drive.google.com/file/d/1_kWJTmvvEnGtNjZn5Gemqu7B7iuXF16i/view?usp=sharing">https://drive.google.com/file/d/1_kWJTmvvEnGtNjZn5Gemqu7B7iuXF16i/view?usp=sharing</a></p>
+</div>
+<div class="section" id="supplemental-videos">
+<h2>Supplemental Videos<a class="headerlink" href="#supplemental-videos" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=MYmC9EVwlFs&amp;t=26s">https://www.youtube.com/watch?v=MYmC9EVwlFs&amp;t=26s</a></p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=lCrBSa1e8k0&amp;t=54s">https://www.youtube.com/watch?v=lCrBSa1e8k0&amp;t=54s</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../class_code.html" class="btn btn-neutral float-right" title="Code Developed in CSCI-1100 Summer 2019" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="lec02_installation.html" class="btn btn-neutral float-left" title="Lecture 2 — Python Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Uzma Mushtaque
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

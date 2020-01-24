@@ -1,0 +1,1138 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Code Developed in CSCI-1010 Fall 2019 &mdash; CS1010 Fall 2019  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="CS1010 Fall 2019 Python Installation Instructions" href="python_environment.html" />
+    <link rel="prev" title="Lecture 12 — Solving Problems on Lists" href="lecture_notes/lec12_listproblems.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> CS1010 Fall 2019
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="calendar.html">Detailed schedule of topics for this class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture_notes.html">Lecture notes and exercises</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Code written in class</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lecture-3">Lecture 3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-calculator-use-python-as-a-calculator"><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Calculator</span></code> — Use Python as a Calculator</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#lecture-4">Lecture 4</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-variables-variables-input-and-expressions"><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Variables</span></code> — Variables,Input and Expressions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#lecture-5">Lecture 5</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-strings-string-manipulation"><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Strings</span></code> — String Manipulation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#lecture-7">Lecture 7</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-functions-functions"><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Functions</span></code> — Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#lecture-8">Lecture 8</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1"><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Functions</span></code> — Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#lecture-9">Lecture 9</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-tuples-tuples-modules-images"><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Tuples</span></code> — Tuples, Modules, Images</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#lecture-11">Lecture 11</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-lists-in-lecture-problems"><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Lists</span></code> — In Lecture Problems</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="python_environment.html">Software installation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CS1010 Fall 2019</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Code Developed in CSCI-1010 Fall 2019</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/class_code.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="code-developed-in-csci-1010-fall-2019">
+<h1>Code Developed in CSCI-1010 Fall 2019<a class="headerlink" href="#code-developed-in-csci-1010-fall-2019" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="lecture-3">
+<h2>Lecture 3<a class="headerlink" href="#lecture-3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-calculator-use-python-as-a-calculator">
+<h3><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Calculator</span></code> — Use Python as a Calculator<a class="headerlink" href="#module-calculator-use-python-as-a-calculator" title="Permalink to this headline">¶</a></h3>
+<p><strong>Code</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Tue Sep 10 09:31:32 2019</span>
+
+<span class="sd">@author: mushtu</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This is Python&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="mi">10</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="nb">type</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="mf">4.0</span><span class="p">)</span>
+
+<span class="c1">#Integer division: Quotient</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="mi">11</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">11</span><span class="o">//</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1">#Modulus Operator:Remainder</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">11</span><span class="o">%</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1">##Expressions: PEMDAS</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">5</span><span class="o">-</span><span class="mi">6</span><span class="p">)</span>
+<span class="c1">#(F-32)*5/9</span>
+<span class="c1">##Covert farenheit to celcius</span>
+<span class="nb">print</span><span class="p">((</span><span class="mi">45</span><span class="o">-</span><span class="mi">32</span><span class="p">)</span><span class="o">*</span><span class="mi">5</span><span class="o">/</span><span class="mi">9</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="lecture-4">
+<h2>Lecture 4<a class="headerlink" href="#lecture-4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-variables-variables-input-and-expressions">
+<h3><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Variables</span></code> — Variables,Input and Expressions<a class="headerlink" href="#module-variables-variables-input-and-expressions" title="Permalink to this headline">¶</a></h3>
+<p><strong>Code</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Tue Sep 10 10:33:37 2019</span>
+
+<span class="sd">@author: mushtu</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1">#Variables</span>
+<span class="c1">#A=pi*r**2</span>
+<span class="n">pi</span><span class="o">=</span><span class="mf">3.14159</span>
+<span class="n">alpha</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">Alpha</span><span class="o">=</span><span class="mi">10</span>
+
+<span class="c1">#Dynamic typing</span>
+<span class="n">Alpha</span><span class="o">=</span><span class="mi">20</span>
+
+<span class="n">x</span><span class="o">=</span><span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1">#Assignment</span>
+<span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="mi">10</span>
+<span class="n">x</span><span class="o">=</span><span class="mi">10</span>
+<span class="c1">#Alternate</span>
+<span class="n">x</span><span class="o">-=</span><span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+
+<span class="c1">#Find volume of a cylinder</span>
+<span class="n">r</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please enter the number for radius &#39;</span><span class="p">))</span>
+<span class="n">h</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please enter the number for height &#39;</span><span class="p">))</span>
+<span class="n">V</span><span class="o">=</span><span class="mf">3.14</span><span class="o">*</span><span class="p">(</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">h</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
+
+
+
+
+
+
+
+
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Fri Sep 13 11:04:46 2019</span>
+
+<span class="sd">@author: mushtu</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1">#Problem 1</span>
+<span class="n">name</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is your name? &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+<span class="c1">#Problem 2</span>
+<span class="n">name</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is your name? &quot;</span><span class="p">)</span>
+<span class="n">age</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How old are you? &quot;</span><span class="p">))</span>
+<span class="n">year</span><span class="o">=</span><span class="mi">2019</span><span class="o">+</span><span class="mi">100</span><span class="o">-</span><span class="n">age</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39;You will be 100 years old in the year&#39;</span><span class="p">,</span><span class="n">year</span><span class="p">)</span>
+
+<span class="c1">##Problem 3</span>
+<span class="n">x</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">y</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">z</span><span class="o">=</span><span class="mi">6</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Average of the 3 numbers are&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">((</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="o">+</span><span class="n">z</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="c1">##Problem 4</span>
+<span class="n">x</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter the first number &#39;</span><span class="p">))</span>
+<span class="n">y</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter the second number &#39;</span><span class="p">))</span>
+<span class="c1">#Part a</span>
+<span class="n">x</span><span class="o">!=</span><span class="n">y</span>
+<span class="c1">#Part b</span>
+<span class="n">x</span><span class="o">==</span><span class="n">y</span>
+
+<span class="c1">#Problem 5</span>
+<span class="n">name</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is your name?&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">name</span><span class="o">==</span><span class="s1">&#39;Alice&#39;</span><span class="ow">or</span> <span class="n">name</span><span class="o">==</span><span class="s1">&#39;Bob&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+    
+<span class="c1">#Problem 6</span>
+<span class="n">n</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the number &quot;</span><span class="p">))</span>
+<span class="n">b</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter A for addition,M for Multiplication&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">b</span><span class="o">==</span><span class="s1">&#39;A&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Result of addition is&#39;</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">b</span><span class="o">==</span><span class="s1">&#39;M&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Result of multiplication is&#39;</span><span class="p">,</span><span class="n">n</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Invalid input&#39;</span><span class="p">)</span>
+    
+<span class="c1">#Problem 7</span>
+<span class="n">n</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the number &quot;</span><span class="p">))</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This number is even&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This number is not even&#39;</span><span class="p">)</span>
+
+<span class="c1">#Problem 8</span>
+<span class="n">n</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Number of friends?&#39;</span><span class="p">))</span>
+<span class="n">m</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Number of chocolates in the packet?&#39;</span><span class="p">))</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">m</span><span class="o">&lt;</span><span class="n">n</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of chocolates insufficient&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">m</span><span class="o">%</span><span class="n">n</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Each friend gets&#39;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">m</span><span class="o">/</span><span class="n">n</span><span class="p">),</span><span class="s1">&#39;chocolates&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There is a surplus of &#39;</span><span class="p">,</span><span class="n">m</span><span class="o">%</span><span class="n">n</span><span class="p">,</span> <span class="s1">&#39;chocolates&#39;</span><span class="p">)</span>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="lecture-5">
+<h2>Lecture 5<a class="headerlink" href="#lecture-5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-strings-string-manipulation">
+<h3><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Strings</span></code> — String Manipulation<a class="headerlink" href="#module-strings-string-manipulation" title="Permalink to this headline">¶</a></h3>
+<p><strong>Code</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Mon Sep 16 12:02:35 2019</span>
+
+<span class="sd">@author: mushtu</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="s2">&quot;Rensselaer&quot;</span>
+<span class="n">s</span><span class="o">=</span><span class="s1">&#39;Rensselaer&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="s1">&#39;4 5 67 8&#39;</span>
+<span class="s1">&#39;   &#39;</span>
+<span class="nb">type</span><span class="p">(</span><span class="s1">&#39;xyz&#39;</span><span class="p">)</span>
+<span class="nb">str</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="c1">#Functions in strings</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">t</span><span class="o">=</span><span class="s1">&#39;He said, &quot;Hello World&quot;&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="n">s1</span><span class="o">=</span><span class="s2">&quot;C&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;mon&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>
+
+<span class="n">t</span><span class="o">=</span> <span class="s2">&quot;&quot;&quot;This extends in</span>
+<span class="s2">multiple lines&quot;&quot;&quot;</span>
+
+<span class="c1">#Escape characters \</span>
+<span class="n">t</span><span class="o">=</span> <span class="s2">&quot;This extends in </span><span class="se">\n</span><span class="s2"> multiple lines&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="n">u</span><span class="o">=</span><span class="s1">&#39;column1</span><span class="se">\t</span><span class="s1">column2</span><span class="se">\t</span><span class="s1">column3&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;You can </span><span class="se">\\</span><span class="s1"> do this&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="c1">##Accessing the elements: Indexing</span>
+<span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">s</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span>
+<span class="n">s</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1">#Slicing [begin:stop:step]</span>
+<span class="n">s</span><span class="o">=</span><span class="s1">&#39;Rensselaer&#39;</span>
+<span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">s</span>
+<span class="c1">#Concatenation</span>
+<span class="s1">&#39;Hello &#39;</span><span class="o">+</span><span class="s1">&#39;World&#39;</span><span class="o">+</span><span class="s1">&#39;!&#39;</span>
+<span class="n">s1</span><span class="o">=</span><span class="s1">&#39;Hello&#39;</span>
+<span class="n">s2</span><span class="o">=</span><span class="s1">&#39;World&#39;</span>
+<span class="n">s1</span><span class="o">+</span><span class="n">s2</span>
+<span class="s1">&#39;Hello&#39;&#39;World&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s1</span><span class="o">+</span><span class="n">s2</span><span class="p">)</span>
+<span class="c1">#Replication</span>
+<span class="s1">&#39;lol&#39;</span><span class="o">*</span><span class="mi">10</span>
+<span class="c1">##Methods: variable.method(argument)</span>
+<span class="n">s</span><span class="o">=</span><span class="s1">&#39;Good Morning&#39;</span>
+<span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;@&#39;</span><span class="p">)</span>
+<span class="n">s</span>
+<span class="c1">#More methods on output</span>
+<span class="n">t</span><span class="o">=</span><span class="s1">&#39;Uzma Mushtaque&#39;</span>
+<span class="n">t</span><span class="o">=</span><span class="n">t</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="n">t</span>
+<span class="n">t</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;M&#39;</span><span class="p">)</span>
+<span class="c1">##Print formatting</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The value of variable&#39;</span><span class="o">+</span><span class="s1">&#39;13&#39;</span><span class="o">+</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="c1">#.format method</span>
+<span class="n">x</span><span class="o">=</span><span class="mi">12</span><span class="o">/</span><span class="mi">11</span>
+<span class="n">y</span><span class="o">=</span><span class="mi">13</span><span class="o">/</span><span class="mi">7</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The value of y is </span><span class="si">{0:.2f}</span><span class="s1"> and x is </span><span class="si">{1:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre></div>
+</div>
+<p><strong>Code</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Tue Sep 17 11:25:00 2019</span>
+
+<span class="sd">@author: mushtu</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1">#Problem 1</span>
+<span class="c1">#Method1</span>
+<span class="n">s</span><span class="o">=</span><span class="s1">&#39;I am at work&#39;</span>
+<span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="s1">&#39;@&#39;</span><span class="p">)</span>
+<span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;I&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+<span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;@&#39;</span><span class="p">,</span><span class="s1">&#39;I&#39;</span><span class="p">)</span>
+<span class="c1">#Method 2</span>
+<span class="n">s</span><span class="o">=</span><span class="s1">&#39;I am at work&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="c1">#Problem 2</span>
+<span class="n">B</span><span class="o">=</span><span class="s1">&#39;Hello World&#39;</span>
+<span class="n">x</span><span class="o">=</span><span class="n">B</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">B</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;True&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;False&#39;</span><span class="p">)</span>
+    
+<span class="c1">#Problem 3</span>
+<span class="n">str1</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Input first string&quot;</span><span class="p">))</span>
+<span class="n">str2</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Input second string&quot;</span><span class="p">))</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span><span class="o">!=</span><span class="nb">len</span><span class="p">(</span><span class="n">str2</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span><span class="o">&gt;</span><span class="nb">len</span><span class="p">(</span><span class="n">str2</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">str2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="s1">&#39;$&#39;</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">str2</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">str1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="s1">&#39;$&#39;</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Both are equal&#39;</span><span class="p">)</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="lecture-7">
+<h2>Lecture 7<a class="headerlink" href="#lecture-7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-functions-functions">
+<h3><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Functions</span></code> — Functions<a class="headerlink" href="#module-functions-functions" title="Permalink to this headline">¶</a></h3>
+<p><strong>Code</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Sat Jan 26 12:02:57 2019</span>
+
+<span class="sd">@author: uzma</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1">##Define our first function</span>
+<span class="k">def</span> <span class="nf">getGroceries</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;milk&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;flour&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sugar&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;butter&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>   <span class="c1">#blank line</span>
+    
+<span class="c1"># Main code starts here</span>
+<span class="n">getGroceries</span><span class="p">()</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="c1">##Modify</span>
+<span class="k">def</span> <span class="nf">getGroceries</span><span class="p">(</span><span class="n">item1</span><span class="p">):</span>    <span class="c1"># uses one parameter variable</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item1</span><span class="p">)</span>  <span class="c1"># prints the contents of the item1 variable</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;flour&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sugar&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;butter&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<span class="c1">#Make it more generic</span>
+<span class="k">def</span> <span class="nf">getGroceries</span><span class="p">(</span><span class="n">item1</span><span class="p">,</span> <span class="n">item2</span><span class="p">,</span> <span class="n">item3</span><span class="p">,</span> <span class="n">item4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item3</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item4</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+ 
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+<span class="c1">##Main code</span>
+<span class="c1"># Now call the function with four arguments</span>
+<span class="n">getGroceries</span><span class="p">(</span><span class="s1">&#39;eggs&#39;</span><span class="p">,</span> <span class="s1">&#39;soap&#39;</span><span class="p">,</span> <span class="s1">&#39;lettuce&#39;</span><span class="p">,</span><span class="s1">&#39;cat food&#39;</span><span class="p">)</span>
+<span class="n">getGroceries</span><span class="p">(</span><span class="s1">&#39;beer&#39;</span><span class="p">,</span> <span class="s1">&#39;milk&#39;</span><span class="p">,</span> <span class="s1">&#39;soda&#39;</span><span class="p">,</span> <span class="s1">&#39;peas&#39;</span><span class="p">)</span>
+
+
+
+
+
+
+
+
+<span class="c1">##Addition function</span>
+<span class="k">def</span> <span class="nf">addTwo</span><span class="p">(</span><span class="n">startingValue</span><span class="p">):</span>
+    <span class="n">endingValue</span> <span class="o">=</span> <span class="n">startingValue</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The sum of&#39;</span><span class="p">,</span> <span class="n">startingValue</span><span class="p">,</span> <span class="s1">&#39;and 2 is:&#39;</span><span class="p">,</span> <span class="n">endingValue</span><span class="p">)</span>
+
+
+
+
+<span class="c1"># Call the function twice with different arguments</span>
+<span class="n">addTwo</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">addTwo</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+
+
+
+
+
+
+
+
+
+
+<span class="c1">##Keywords</span>
+
+<span class="c1">##Function to add two numbers</span>
+<span class="c1">##Introducing keyword return</span>
+<span class="k">def</span> <span class="nf">sum_two_numbers</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="c1">##Keyword argv in python</span>
+<span class="k">def</span> <span class="nf">myFun</span><span class="p">(</span><span class="o">*</span><span class="n">argv</span><span class="p">):</span>   
+        <span class="nb">print</span> <span class="p">(</span><span class="n">argv</span><span class="p">)</span> 
+
+
+        
+ 
+
+
+
+
+
+
+       
+<span class="c1">##Math class</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mf">15.25</span><span class="p">)</span>
+<span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+
+
+<span class="c1">##Strings class</span>
+<span class="n">s</span><span class="o">=</span><span class="s1">&#39;Apple&#39;</span>
+<span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="n">s</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+<span class="n">s</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+
+
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="lecture-8">
+<h2>Lecture 8<a class="headerlink" href="#lecture-8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Functions</span></code> — Functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p><strong>Code</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Fri Sep 27 10:35:22 2019</span>
+
+<span class="sd">@author: mushtu</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="k">def</span> <span class="nf">isright</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">((</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">==</span><span class="p">(</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">isright</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">isright</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="lecture-9">
+<h2>Lecture 9<a class="headerlink" href="#lecture-9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-tuples-tuples-modules-images">
+<h3><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Tuples</span></code> — Tuples, Modules, Images<a class="headerlink" href="#module-tuples-tuples-modules-images" title="Permalink to this headline">¶</a></h3>
+<p><strong>Code</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Fri Feb  8 13:11:02 2019</span>
+
+<span class="sd">@author: mushtu</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<span class="c1"># An empty tuple </span>
+<span class="n">empty_tuple</span> <span class="o">=</span> <span class="p">()</span> 
+<span class="nb">print</span> <span class="p">(</span><span class="n">empty_tuple</span><span class="p">)</span> 
+
+
+<span class="c1"># Creating non-empty tuples   </span>
+<span class="c1"># One way of creation </span>
+<span class="n">tup</span> <span class="o">=</span> <span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="s1">&#39;rpics&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tup</span><span class="p">)</span> 
+  
+<span class="c1"># Another way for doing the same </span>
+<span class="n">tup</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="s1">&#39;rpics&#39;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">tup</span><span class="p">)</span> 
+
+
+<span class="c1"># Code for concatenating 2 tuples </span>
+  
+<span class="n">tuple1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> 
+<span class="n">tuple2</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="s1">&#39;rpics&#39;</span><span class="p">)</span> 
+  
+<span class="c1"># Concatenating above two </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tuple1</span> <span class="o">+</span> <span class="n">tuple2</span><span class="p">)</span> 
+
+
+<span class="c1"># Creating nested tuples   </span>
+<span class="n">tuple1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> 
+<span class="n">tuple2</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="s1">&#39;rpics&#39;</span><span class="p">)</span> 
+<span class="n">tuple3</span> <span class="o">=</span> <span class="p">(</span><span class="n">tuple1</span><span class="p">,</span> <span class="n">tuple2</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">tuple3</span><span class="p">)</span> 
+
+
+
+<span class="c1"># Create a tuple with repetition </span>
+  
+<span class="n">tuple4</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;rpics&#39;</span><span class="p">,)</span><span class="o">*</span><span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tuple4</span><span class="p">)</span> 
+
+
+
+<span class="c1">#code to test that tuples are immutable   </span>
+<span class="n">tuple1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> 
+<span class="n">tuple4</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">tuple1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tuple1</span><span class="p">)</span> 
+
+
+<span class="c1"># code to test slicing </span>
+  
+<span class="n">tuple1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span> <span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">tuple1</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">tuple1</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">tuple1</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span> 
+
+
+
+<span class="c1"># Printing the length of a tuple   </span>
+<span class="n">tuple2</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="s1">&#39;rpics&#39;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tuple2</span><span class="p">))</span> 
+
+<span class="c1">#Some methods in tuples</span>
+<span class="n">tup1</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="n">tup1</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="c1">##index shows the first time index appears in the tuple</span>
+<span class="n">tup1</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="n">tup1</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="c1">##Booloean output with in as keyword</span>
+<span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="n">tup1</span>
+<span class="mi">1</span> <span class="ow">in</span> <span class="n">tup1</span>
+
+
+
+
+
+
+
+
+
+
+<span class="c1">##Multiple assignments</span>
+<span class="n">t1</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">t1</span>
+<span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="n">t1</span>
+<span class="n">a</span>
+<span class="n">b</span>
+<span class="n">c</span>
+
+
+
+
+
+
+<span class="c1"># Split a two-digit number into its tens and ones digit</span>
+<span class="k">def</span> <span class="nf">divprob</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">tens</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">10</span> <span class="c1">##returns the quotient</span>
+    <span class="n">ones</span> <span class="o">=</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">10</span> <span class="c1">##returns the remainder</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">tens</span><span class="p">,</span> <span class="n">ones</span><span class="p">)</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="mi">57</span>
+<span class="n">ten</span><span class="p">,</span> <span class="n">one</span> <span class="o">=</span> <span class="n">divprob</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="s2">&quot;has tens digit = &quot;</span><span class="p">,</span> <span class="n">ten</span><span class="p">,</span> <span class="s2">&quot;and ones digit = &quot;</span><span class="p">,</span> <span class="n">one</span><span class="p">)</span>
+
+
+
+
+
+
+
+
+
+<span class="c1">##Pass a tuple to a function</span>
+<span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">str1</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">str1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">str1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">str1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="n">d</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hello</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="c1">##Call module</span>
+<span class="kn">import</span> <span class="nn">Area</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">a1</span> <span class="o">=</span> <span class="n">Area</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>        <span class="c1">#  Call a module function</span>
+<span class="n">a2</span> <span class="o">=</span> <span class="n">Area</span><span class="o">.</span><span class="n">cylinder</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span>   <span class="c1">#  Call a module function</span>
+<span class="n">a3</span> <span class="o">=</span> <span class="n">Area</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>        <span class="c1">#  Call a module function</span>
+<span class="n">a4</span><span class="o">=</span> <span class="n">Area</span><span class="o">.</span><span class="n">cone</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">h</span><span class="p">)</span>
+
+<span class="c1">#path to a module</span>
+<span class="kn">import</span> <span class="nn">Area</span>
+<span class="n">Area</span><span class="o">.</span><span class="vm">__file__</span>
+
+
+<span class="c1">##Another way of calling a module</span>
+<span class="kn">from</span> <span class="nn">Area</span> <span class="k">import</span> <span class="n">circle</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="c1">##Images</span>
+    
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="n">filename</span><span class="o">=</span><span class="s2">&quot;Bloom.jpg&quot;</span>
+<span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+<span class="n">im</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">im</span><span class="o">.</span><span class="n">size</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here&#39;s the information about&quot;</span><span class="p">,</span> <span class="n">im</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">im</span><span class="o">.</span><span class="n">format</span><span class="p">,</span> <span class="n">im</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">im</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+
+
+
+
+
+
+
+
+<span class="c1">##Crop</span>
+<span class="n">im2</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">600</span><span class="p">))</span>
+<span class="n">im2</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1">##Rotate</span>
+<span class="n">im3</span><span class="o">=</span><span class="n">im</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+<span class="n">im3</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1">##Convert to grayscale</span>
+<span class="n">gray_im</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;L&#39;</span><span class="p">)</span>
+<span class="n">gray_im</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="c1">#Resize the image</span>
+<span class="n">scaled</span> <span class="o">=</span> <span class="n">gray_im</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">))</span>
+<span class="c1">#Check the attributes</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">scaled</span><span class="o">.</span><span class="n">format</span><span class="p">,</span> <span class="n">scaled</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">scaled</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+<span class="c1">#Show the new image</span>
+<span class="n">scaled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="c1">##Save the new file</span>
+<span class="n">scaled</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">filename</span> <span class="o">+</span> <span class="s2">&quot;_scaled.jpg&quot;</span><span class="p">)</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="c1">##Copy and paste</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="n">filename1</span><span class="o">=</span><span class="s2">&quot;sheep.jfif&quot;</span>
+<span class="n">im4</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename1</span><span class="p">)</span>
+<span class="n">im4</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">im4</span><span class="o">.</span><span class="n">size</span>
+
+
+
+
+
+
+<span class="c1">#New blank image</span>
+<span class="n">im5</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">375</span><span class="o">*</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">im5</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">im5</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span> <span class="n">im4</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>   <span class="c1">##not assigning the result of paste to a new variable</span>
+<span class="n">im5</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">im5</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span> <span class="n">im4</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">380</span><span class="p">))</span>
+<span class="n">im5</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="c1">##Paste Images</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
+
+<span class="n">im6</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;lego.jfif&quot;</span><span class="p">)</span>
+<span class="n">im6</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">w</span><span class="p">,</span><span class="n">h</span> <span class="o">=</span> <span class="n">im6</span><span class="o">.</span><span class="n">size</span>
+
+<span class="c1">## Crop out three columns from the image</span>
+<span class="c1">## Note: the crop function returns a new image</span>
+<span class="n">part1</span> <span class="o">=</span> <span class="n">im6</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">w</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span><span class="n">h</span><span class="p">))</span>
+<span class="n">part2</span> <span class="o">=</span> <span class="n">im6</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="n">w</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">w</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span><span class="n">h</span><span class="p">))</span>
+<span class="n">part3</span> <span class="o">=</span> <span class="n">im6</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="mi">2</span><span class="o">*</span><span class="n">w</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">h</span><span class="p">))</span>
+
+<span class="c1">## Create a new image</span>
+<span class="n">newim</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;RGB&quot;</span><span class="p">,(</span><span class="n">w</span><span class="p">,</span><span class="n">h</span><span class="p">))</span>
+<span class="n">newim</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="c1">## Paste the image in different order</span>
+<span class="c1">## Note: the paste function changes the image it is applied to</span>
+<span class="n">newim</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">part3</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">newim</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">part1</span><span class="p">,</span> <span class="p">(</span><span class="n">w</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">newim</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">part2</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">w</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">newim</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="c1">##Original image was:</span>
+<span class="n">im6</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Sat Feb  9 10:24:05 2019</span>
+
+<span class="sd">@author: mushtu</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="c1">#Area of a circle</span>
+<span class="k">def</span> <span class="nf">circle</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1">#Area of cylinder</span>
+<span class="k">def</span> <span class="nf">cylinder</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span><span class="n">height</span><span class="p">):</span>
+    <span class="n">circle_area</span> <span class="o">=</span> <span class="n">circle</span><span class="p">(</span><span class="n">radius</span><span class="p">)</span>
+    <span class="n">height_area</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">height</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">circle_area</span> <span class="o">+</span> <span class="n">height_area</span>
+
+<span class="c1">#Area of sphere</span>
+<span class="k">def</span> <span class="nf">sphere</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1">#Area of cone</span>
+<span class="k">def</span> <span class="nf">cone</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+    <span class="n">slant_area</span><span class="o">=</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="o">*</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">height</span><span class="o">^</span><span class="mi">2</span><span class="o">+</span><span class="n">radius</span><span class="o">^</span><span class="mi">2</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">circle</span><span class="p">(</span><span class="n">radius</span><span class="p">)</span><span class="o">+</span><span class="n">slant_area</span>
+
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="lecture-11">
+<h2>Lecture 11<a class="headerlink" href="#lecture-11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-lists-in-lecture-problems">
+<h3><strong>Module:</strong> <code class="xref py py-mod docutils literal notranslate"><span class="pre">Lists</span></code> — In Lecture Problems<a class="headerlink" href="#module-lists-in-lecture-problems" title="Permalink to this headline">¶</a></h3>
+<p><strong>Code</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Tue Oct 15 11:26:41 2019</span>
+
+<span class="sd">@author: mushtu</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1">#Problem 1</span>
+<span class="k">def</span> <span class="nf">first_last6</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">==</span><span class="mi">6</span> <span class="ow">or</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="mi">6</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">False</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">first_last6</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">]))</span>
+
+<span class="c1">#Problem 2</span>
+<span class="k">def</span> <span class="nf">common_end</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">==</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">or</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="n">y</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">False</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">common_end</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">]))</span>
+
+<span class="c1">#Problem 3</span>
+<span class="k">def</span> <span class="nf">big_diff</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">x</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">big_diff</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">10</span><span class="p">]))</span>
+
+<span class="c1">#Problem 4</span>
+<span class="k">def</span> <span class="nf">rotate_left3</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">a</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">b</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">c</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">a</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">rotate_left3</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]))</span>
+
+
+
+
+
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="python_environment.html" class="btn btn-neutral float-right" title="CS1010 Fall 2019 Python Installation Instructions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="lecture_notes/lec12_listproblems.html" class="btn btn-neutral float-left" title="Lecture 12 — Solving Problems on Lists" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Uzma Mushtaque
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

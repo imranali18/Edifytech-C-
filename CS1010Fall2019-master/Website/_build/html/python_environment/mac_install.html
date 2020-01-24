@@ -1,0 +1,403 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Install On Mac OS X &mdash; CS1010 Fall 2019  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Install On Linux" href="linux_install.html" />
+    <link rel="prev" title="Install On Windows" href="windows_install.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CS1010 Fall 2019
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../calendar.html">Detailed schedule of topics for this class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture_notes.html">Lecture notes and exercises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../class_code.html">Code written in class</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../python_environment.html">Software installation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../python_environment.html#installing-python-3-7-using-miniconda-and-wing-ide-101">Installing Python 3.7 Using Miniconda and Wing IDE 101</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="windows_install.html">Install On Windows</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Install On Mac OS X</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#install-miniconda-python-3-7">Install Miniconda Python 3.7</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-wing-ide-101-and-connect-it-to-miniconda-python">Install Wing IDE 101 and Connect It to Miniconda Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#detecting-64-bits-versus-32-bits-mac-os-x-systems">Detecting 64-bits versus 32-bits Mac OS X Systems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#security-problems">Security Problems</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linux_install.html">Install On Linux</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../python_environment.html#dropbox">Dropbox</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CS1010 Fall 2019</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../python_environment.html">CS1100 Summer 2019 Python Installation Instructions</a> &raquo;</li>
+        
+      <li>Install On Mac OS X</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/python_environment/mac_install.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="install-on-mac-os-x">
+<h1>Install On Mac OS X<a class="headerlink" href="#install-on-mac-os-x" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="install-miniconda-python-3-7">
+<h2>Install Miniconda Python 3.7<a class="headerlink" href="#install-miniconda-python-3-7" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>To get started you need to download the OSX miniconda
+installer.</p>
+<ol class="loweralpha simple">
+<li><p>Click on the link <a class="reference external" href="https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh">https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh</a></p></li>
+<li><p>Wait for it to download.  It will place a file called
+<strong>Miniconda3-latest-MacOSX-x86_64.sh</strong> in your downloads
+folder. On my computer using Safari this is ~/Downloads</p></li>
+</ol>
+</li>
+<li><p>Open a <em>Terminal</em> window. If you don’t know how to do this click <em>Applications -&gt; Utilities -&gt; Terminal</em></p></li>
+<li><p>Within <em>Terminal</em> change directories into the folder where your downloaded file lives, i.e.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">Downloads</span>
+</pre></div>
+</div>
+</li>
+<li><p>Now run the bash “shell” program to install Miniconda:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bash</span> <span class="n">Miniconda3</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">MacOSX</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<ol class="arabic" start="6">
+<li><p>Scroll through the license (press the space bar to move through
+quickly), type ‘yes’ to approve the terms, and then accept all the
+installation defaults.</p></li>
+<li><p>Close the Terminal program.  Then, restart it.</p></li>
+<li><p>Within the Terminal type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">pillow</span>
+</pre></div>
+</div>
+<ol class="loweralpha simple" start="2">
+<li><p>Enter <em>y</em> at the <em>Proceed</em> prompt.</p></li>
+<li><p>When the installation completes, close the Terminal window.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="install-wing-ide-101-and-connect-it-to-miniconda-python">
+<h2>Install Wing IDE 101 and Connect It to Miniconda Python<a class="headerlink" href="#install-wing-ide-101-and-connect-it-to-miniconda-python" title="Permalink to this headline">¶</a></h2>
+<p>The second half of the installation is the Wing IDE 101 development
+environment.  This is the software that you use to write, edit, and
+test your Python programs.  Wing IDE 101 calls Python to actually run the
+program.  Therefore, we have to download and install Wing IDE 101 and then
+tie it to the Miniconda version of Python.</p>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="http://wingware.com/downloads/wingide-101">http://wingware.com/downloads/wingide-101</a></p></li>
+<li><p>Download the installer for your operating system.  For Mac OS X
+this downloads an installation dmg package.  Double click on it to
+install and follow the instructions. As with miniconda, you may
+need to answer of few questions and accept the license
+agreement. You should use the default settings. If you see a
+security problem, see <a class="reference internal" href="#security-exceptions-label"><span class="std std-ref">Security Problems</span></a>.</p></li>
+<li><p>Open the Wing IDE 101 application.  We’ll explore this application in
+lecture and in lab, but for now we just need to tell Wing about
+Miniconda Python.  To do this, click on the menu and then <em>Edit -&gt;
+Configure Python</em></p></li>
+<li><p>For the <em>Python Executable</em> click on <em>Custom</em> and then <em>Browse</em> to the
+location for the Miniconda Python executable.  On my Mac this is
+<em>/Users/stewart/miniconda3/bin/python3.7</em>  See the following:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/link-ide-to-python3-mac.png"><img alt="../_images/link-ide-to-python3-mac.png" class="align-center" src="../_images/link-ide-to-python3-mac.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="5">
+<li><p>Ignore the <em>Python Path</em> and all other settings and click OK.</p></li>
+<li><p>Back in the main Wing IDE 101 it may ask you to restart the Python
+shell.  Once you do then you should see at the top of the Python
+Shell window pane something about “3.7 |Continuum Analytics,
+Inc.” etc.  If you have this you are all set and the installation
+is complete!</p></li>
+</ol>
+</div>
+<div class="section" id="detecting-64-bits-versus-32-bits-mac-os-x-systems">
+<h2>Detecting 64-bits versus 32-bits Mac OS X Systems<a class="headerlink" href="#detecting-64-bits-versus-32-bits-mac-os-x-systems" title="Permalink to this headline">¶</a></h2>
+<p>You are running 64-bit Mac OS X.</p>
+<p><em>Technically, all Apple computers purchased since Q4 2006 have been equipped with
+64-bit capable processors.  The Mac OS X operating system has supported 64-bit by
+default since OS X 10.6 Snow Leopard, released in 2009.  The upgrade to the latest
+operating system for your computer is available for free, directly from Apple,
+since the release of OS X 10.9 Mavericks in 2013.</em></p>
+</div>
+<div class="section" id="security-problems">
+<span id="security-exceptions-label"></span><h2>Security Problems<a class="headerlink" href="#security-problems" title="Permalink to this headline">¶</a></h2>
+<p>For OS X 10.7 and later: The installation of a software package like
+Wing 101 might fail due to a security feature, called <em>Gatekeeper</em>. If
+you have a problem, you will get a message that looks like:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Wing 101&quot;</span>  <span class="n">can</span><span class="s1">&#39;t be opened because it is from an unidentified developer.</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>Option 1: One time security bypass:</strong></p>
+<p>To temporarily bypass Gatekeeper, right-click (or Control-click) on
+the app’s icon and select Open. You’ll still receive an alert message,
+but this time it’s only a warning. Clicking Open again will launch the
+app.</p>
+<p>We recommend that you do not make a habit of using this bypass
+however. Use this method, only if you are certain that there is no
+security risk with the software you are installing, such as Wing 101.</p>
+<p><strong>Option 2: Disable security feature, install and re-enable it:</strong></p>
+<p>In this second method, you will disable gatekeeper first, install the
+software, then re-enable it. Unfortunately, this has been made
+difficult for later versions of Mac OS X like Sierra. So, we will
+offer two methods to do this. Option 2.2 should apply to all versions,
+but not recommended for users new to Unix.</p>
+<p><strong>Option 2.1: Try the following instructions (earlier versions of OS X):</strong></p>
+<ul>
+<li><p>Click the Apple icon in the menu bar and select <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">Preferences</span></code>.</p></li>
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Security</span> <span class="pre">&amp;</span> <span class="pre">Privacy</span></code> — It is located in the first row, which is entitled <code class="docutils literal notranslate"><span class="pre">Personal</span></code>.</p></li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">General</span></code> tab.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Authenticate</span></code>:  Click on the lock at the bottom-lefthand corner of the screen and subsequently input your computer user account password.</p></li>
+<li><p>In the bottom half of the <code class="docutils literal notranslate"><span class="pre">General</span></code> tab, there will be the following choices:</p>
+<blockquote>
+<div><ul>
+<li><p>Allow applications downloaded from:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>(  ) Mac App Store</p></li>
+<li><p>(X) Mac App Store and identified developers</p></li>
+<li><p>(  ) Anywhere</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>If you cannot see the option <code class="docutils literal notranslate"><span class="pre">Anywhere</span></code>, follow instructions for
+<strong>Option 2.2</strong> below.</p>
+</li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Anywhere</span></code> and select <code class="docutils literal notranslate"><span class="pre">Allow</span> <span class="pre">From</span> <span class="pre">Anywhere</span></code> in the subsequent dropdown warning.  We will be re-enabling this feature after the installer is completed.</p></li>
+<li><p>Install the software package.</p></li>
+<li><p>Once the installer has completed, go back to the <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">Preferences</span></code> window and re-select the option</p>
+<blockquote>
+<div><ul>
+<li><p>Allow applications downloaded from:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>(  ) Mac App Store</p></li>
+<li><p>(X) Mac App Store and identified developers</p></li>
+<li><p>(  ) Anywhere</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>This will return the security settings back to normal.</p></li>
+<li><p>Close <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">Preferences</span></code> window.</p></li>
+</ul>
+<p><strong>Option 2.2: Terminal solution (later versions of OS X):</strong></p>
+<p>In Sierra, OS X got rid of the <code class="docutils literal notranslate"><span class="pre">Anywhere</span></code> option. So, you will need to
+use a different method for allowing this. As this method makes a
+permanent change to your computer that is not visible from an
+interface, we recommend you ask help from a TA or a mentor to follow
+these steps.</p>
+<p>Open a Terminal window from <code class="docutils literal notranslate"><span class="pre">Applications-&gt;Utilities</span></code>. Type the
+following command:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">spctl</span> <span class="o">--</span><span class="n">master</span><span class="o">-</span><span class="n">disable</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>This will ask you to type in your password, which is likely the
+administrator password for the computer. This enables software to be
+installed from any source. Now you should be able to install any
+software.</p>
+<p>As in Option 2.1, we want to revert back to the original settings
+after this action. Once you are done with the installation, again
+using a Terminal, type the following command:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">spctl</span> <span class="o">--</span><span class="n">master</span><span class="o">-</span><span class="n">enable</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>This should restore the original security settings. A word of
+caution, do not use the sudo option on a regular basis as this
+bypasses all security settings. Some of us caused real harm to our
+computers by using this command unwisely.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="linux_install.html" class="btn btn-neutral float-right" title="Install On Linux" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="windows_install.html" class="btn btn-neutral float-left" title="Install On Windows" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Uzma Mushtaque
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
