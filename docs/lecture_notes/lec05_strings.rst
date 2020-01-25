@@ -14,8 +14,8 @@ expressions. We will discuss some classes for efficient construction of strings.
 a look at the methods and classes for achieving more elegant and stricter formatting of the text 
 content 
 
-What Is a String? 
------------------
+String
+------
 
 
 A string is a sequence of characters stored in a certain address in memory. Remember the type char?
