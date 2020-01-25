@@ -17,6 +17,7 @@ content
 What Is a String? 
 -----------------
 
+
 A string is a sequence of characters stored in a certain address in memory. Remember the type char?
 In the variable of type char we can record only one character. Where it is necessary to process more 
 than one character then strings come to our aid. In. NET Framework each character has a serial number
@@ -163,43 +164,6 @@ expression, which returns a string:
 The info variable has been created from the concatenation of literals and a variable.
 
 
-
-More Than Just Numbers
-----------------------
-
--  Strings are our fourth type, after integers, floats and Boolean.
-
--  We’ve already seen the use of strings in output: 
-
-   ::
-
-       print("Hello world")
-       x = 18
-       y = 11
-       print("Value of x is", x, "value of y is", y)
-
-
-Topics for Today
-----------------
-
--  String basics
-
--  String operations
-
--  Print formatting
-
-Strings — Definition
---------------------
-
--  A string is a sequence of 0 or more characters delimited by single
-   quotes or double quotes:
-
-   ::
-
-         'Rensselaer'
-         "Troy, NY"
-         '41 18 154 23 402'
-         ''
 
 Lecture Notes
 --------------
