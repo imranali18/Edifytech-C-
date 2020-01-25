@@ -19,6 +19,7 @@ What Is a String?
 
 This is a sub section
 ^^^^^^^^^^^^^^^^^^^^^
+
 A string is a sequence of characters stored in a certain address in memory. Remember the type char?
 In the variable of type char we can record only one character. Where it is necessary to process more 
 than one character then strings come to our aid. In. NET Framework each character has a serial number
