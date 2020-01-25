@@ -62,6 +62,7 @@ Strings – Simple Example
 Let’s give an example for using variables from the type string: 
 
 ::
+
        string message = "This is a sample string message."; 
  
        Console.WriteLine("message = {0}", message); 
