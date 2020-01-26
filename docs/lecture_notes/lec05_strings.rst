@@ -1,37 +1,6 @@
 Lecture 5 — Strings
 ===============================================
 
-In this Chapter
----------------
-
-In this chapter we will explore strings. We are going to explain how they are implemented in C# 
-and in what way we can process text content. Additionally, we will go through different methods 
-for manipulating a text: we will learn how to compare strings, how to search for substrings, how
-to extract substrings upon previously settled parameters and last but not least how to split a 
-string by separator chars. We will demonstrate how to correctly build strings with the StringBuilder 
-class. We will provide a short but very useful information for the most commonly used regular 
-expressions. We will discuss some classes for efficient construction of strings. Finally, we will take 
-a look at the methods and classes for achieving more elegant and stricter formatting of the text 
-content 
-
-String
-------
-
-
-A string is a sequence of characters stored in a certain address in memory. Remember the type char?
-In the variable of type char we can record only one character. Where it is necessary to process more 
-than one character then strings come to our aid. In. NET Framework each character has a serial number
-from the Unicode table. The Unicode standard is established in the late 80s and early 90s in order to
-store different types of text data. Its predecessor ASCII is able to record only 128 or 256 characters 
-(respective ASCII standard with 7-bit or 8bit table). Unfortunately, this often does not meet user needs
-– as we can fit in 128 characters only digits, uppercase and lowercase Latin letters and some specific 
-individual characters. When you have to work with text in Cyrillic or other specific language 
-(e.g. Chinese or Arabian), 128 or 256 characters are extremely insufficient. 
-Here is why .NET uses 16-bit code table for the characters. With our knowledge of number systems and 
-representation of information in computers, we can calculate that the code table store 2^16 = 65,536 
-characters. Some characters are encoded in a specific way, so it is possible to use two characters of 
-the Unicode table to create a new character – the resulting signs exceed 100,000. 
-
 The System.String Class 
 -----------------------
 
